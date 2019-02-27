@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 public class RpcTest {
 	
 	
-	@RabbitListener(queues="/models/test")
+	@RabbitListener(queues="post/models/test")
 	public String getData(String msg) {
 		return "hello";
 	} 
