@@ -3,7 +3,7 @@ FROM gradle
 USER root
 RUN apt-get update
 RUN apt-get install git -y 
-
+RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 ENV GIT_ADDR='https://github.com/a854363956/fairy-model.git'
 
