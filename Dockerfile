@@ -15,5 +15,6 @@ RUN cd /home/gradle \
 ENTRYPOINT cd /home/gradle \
 && project=`ls` \
 && cd /home/gradle/${project} \
+&& git pull \
 && gradle build --refresh-dependencies \ 
 && gradle bootRun
